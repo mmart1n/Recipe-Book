@@ -1,0 +1,42 @@
+<div class="row">
+  <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+    <h2>Create new Account</h2>
+    <form [formGroup]="SignUpForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="username">Email</label>
+          <input
+            type="email"
+            id="email"
+            class="form-control"
+            formControlName="email">
+            <span *ngIf="!SignUpForm.get('email').valid && SignUpForm.get('email').touched" class="help-block">
+              Please enter a valid E-Mail!
+            </span>
+      </div>
+      <div class="form-group">
+        <label for="email">New Password</label>
+          <input
+            type="password"
+            id="newPassword"
+            class="form-control"
+            formControlName="newPassword">
+            <span *ngIf="!SignUpForm.get('newPassword').valid && SignUpForm.get('newPassword').touched" class="help-block">
+              Please enter a valid password! (more than 6 chars)
+            </span>
+      </div>
+      <div class="form-group">
+          <label for="email">Repeat New Password</label>
+            <input
+              type="password"
+              id="repeatedNewPassword"
+              class="form-control"
+              formControlName="repeatedNewPassword">
+              <span *ngIf="!SignUpForm.get('repeatedNewPassword').valid && SignUpForm.get('repeatedNewPassword').touched" class="help-block">
+                Please repeat your new Password correctly!
+              </span>
+      </div>
+      <span *ngIf="!SignUpForm.valid && SignUpForm.touched" class="help-block">Please enter valid data!</span>
+      <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+  </div>
+</div>

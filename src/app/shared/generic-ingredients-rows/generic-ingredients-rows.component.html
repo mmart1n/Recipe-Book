@@ -1,0 +1,8 @@
+<a
+  *ngFor="let ingredient of ingredients; let i = index"
+  (click)="getIngredientIndex(i)"
+  class="list-group-item"
+  style="cursor: pointer"
+  >
+    {{ingredient.name}} ({{ingredient.amount}})
+</a>

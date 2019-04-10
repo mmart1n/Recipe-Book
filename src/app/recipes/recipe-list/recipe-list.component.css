@@ -1,0 +1,9 @@
+.btn.btn-danger {
+  background-color: #c9302c;
+  border-color: #ac2925;
+  pointer-events: none;
+}
+
+.help-block {
+  color: #c9302c;
+}
