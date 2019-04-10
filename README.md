@@ -1,5 +1,5 @@
 # Recipe Book
----
+
 This is an Angular CLI Single Page Application, based on course, I have done in Udemy. For the back-end I used Firebase. Through the application users can create their own recipes, edit or delete existing ones and store the changes in the database, or fetch already stored recipes by themselves or by other users and also editing/deleting them. There is a shopping list, where they can store ingredients, change the amount of existing ones or delete them. 
 
 ## Angular features, I have used to building this application:
